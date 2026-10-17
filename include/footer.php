@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Planing & Publishing a Website Demo </h1>
-    <h2>Class 5 A</h2>
-    <h3>25-09-2026</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, veniam.</p>
+       <!-- This is footer section -->
+    <footer>
+        <p>&copy; 2023-2026 Designed & Developed by ..................</p>
+    </footer>
 </body>
 </html>
