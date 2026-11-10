@@ -37,12 +37,13 @@
         <fieldset>
             <legend>Sign Up Form</legend>
             <form action="" method="get" name="f1" onsubmit="return chkpwd()">
-                <input type="text" name="fname" required placeholder="First Name">
-                <br><br><input type="text" name="lname" required placeholder="Last Name">
-                <br> <br><input type="password" name="password" id="pwd" required placeholder="Password">
-                <input type="checkbox" class="chkbox" onclick="showpwd()">
-                <br><br><input type="password" name="cpassword" required placeholder="Confirm Password">
-                <br> <br><input type="email" name="email" required placeholder="Email">
+                <input type="text" name="fname" required placeholder="First Name" required>
+                <br><br><input type="text" name="lname" required placeholder="Last Name" required>
+                <br> <br><input type="password" name="password" id="pwd" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+                    title="Must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character." required>
+                <button type="button" onclick="showpwd()">&#128065;</button><br />
+                <br><br><input type="password" name="cpassword" required placeholder="Confirm Password" required>
+                <br> <br><input type="email" name="email" required placeholder="Email" required>
                 <br><br><input type="submit" name="register" value="Register">
             </form>
         </fieldset>

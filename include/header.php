@@ -24,6 +24,11 @@
         <div></div>
     </header>
 
+
+        <!-- toggle Menu -->
+    <input type="checkbox" id="menu">
+    <label for="menu">&#9776; Menu</label>
+
     <!-- This is navigation section -->
     <nav>
         <ul>
@@ -52,6 +57,10 @@
                     <li><a href="">Border Box</a></li>
 
                 </ul>
+            </li>
+
+            <li>
+                <!-- <a href="">Sign up</a> -->
             </li>
         </ul>
 
