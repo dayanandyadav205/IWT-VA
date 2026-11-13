@@ -23,6 +23,18 @@ h3 {
 }
 
 /* ================= Navigation CSS ================*/
+
+/* Mobile view CSS */
+#menu {
+    display: none;
+}
+
+label{
+    display: none;
+
+}
+
+/* Desktop viwe CSS */
 nav {
     background-color: navy;
 
@@ -123,11 +135,6 @@ footer p {
         font-size: 80%;
     }
 
-    body img {
-        width: 20%;
-        height: 20%;
-    }
-
     header {
         display: flex;
         flex-direction: column;
@@ -135,12 +142,26 @@ footer p {
         line-height: 30px;
     }
 
-    nav {
+    /* toggle Menu */
+    /* #menu {
+        display: block;
+    } */
+
+    label{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+
+    #menu:checked~nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
-    }
+    } 
 
     nav ul {
         display: flex;

@@ -9,20 +9,17 @@
 
     <style>
         main {
-            /* display: fle; */
+            padding: 20px;
         }
 
         fieldset {
-            width: 70%;
+            padding: 20px;
+            width: 50%;
         }
 
-        fieldset form input {
+        input {
             width: 250px;
-            height: 20px;
-        }
-
-        .chkbox {
-            margin-left: 150px;
+            height: 30px;
         }
     </style>
 
@@ -36,15 +33,20 @@
 
         <fieldset>
             <legend>Sign Up Form</legend>
-            <form action="" method="get" name="f1" onsubmit="return chkpwd()">
+            <form action="#" method="POST" name="f1" onsubmit="return chkpwd()">
                 <input type="text" name="fname" required placeholder="First Name" required>
+
                 <br><br><input type="text" name="lname" required placeholder="Last Name" required>
+
+                <br> <br><input type="email" name="email" required placeholder="Email" required>
+
                 <br> <br><input type="password" name="password" id="pwd" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
                     title="Must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character." required>
                 <button type="button" onclick="showpwd()">&#128065;</button><br />
+
                 <br><br><input type="password" name="cpassword" required placeholder="Confirm Password" required>
-                <br> <br><input type="email" name="email" required placeholder="Email" required>
-                <br><br><input type="submit" name="register" value="Register">
+
+                <br><br><input type="submit" name="register" value="Signup">
             </form>
         </fieldset>
 
@@ -64,17 +66,16 @@
         }
     }
 
-    function chkpwd(){
+    function chkpwd() {
         let p1 = document.f1.password.value;
         let p2 = document.f1.cpassword.value;
 
-        if(p1 == p2){
+        if (p1 == p2) {
             return true;
-        }
-        else{
+        } else {
             alert("Password Mismatch");
             return false;
-            
+
         }
     }
 </script>

@@ -24,16 +24,14 @@
         <div></div>
     </header>
 
-
-        <!-- toggle Menu -->
-    <input type="checkbox" id="menu">
-    <label for="menu">&#9776; Menu</label>
-
-    <!-- This is navigation section -->
+    <!-- Mobile view navigation -->
+     <input type="checkbox" id="menu">
+     <label for="menu" style="font-size: 30px;">&#9776; Menu</label>
+    <!-- Desktop view navigation -->
     <nav>
         <ul>
             <li><a href="/index.php">HOME2</a></li>
-            <li class="dropdown"><a href="#">HTML Topics &#4955;</a>
+            <li class="dropdown"><a href="#">HTML Topics &#9660;</a>
                 <ul class="dropdown-menu">
                     <li><a href="/HTML_Topics\HTML_text_formatting.php" target="_top">HTML Text Formatting</a></li>
                     <li><a href="/HTML_Topics\HTML_fonts.php">Fonts</a></li>
@@ -41,17 +39,17 @@
                     <li><a href="/HTML_Topics\hyperlinks.php">Hyperlinks</a></li>
                     <li><a href="/HTML_Topics\lists.php">Lists</a></li>
                     <li><a href="/HTML_Topics\table.php">Tables</a></li>
-<li><a href="/HTML_Topics\images.php">Images</a></li>
-<li><a href="/HTML_Topics\forms.php">Forms</a></li>
-<li><a href="/HTML_Topics\XHTML.php">XHTML</a></li>
-<li><a href="/HTML_Topics\meta.php">Meta tags</a></li>
+                    <li><a href="/HTML_Topics\images.php">Images</a></li>
+                    <li><a href="/HTML_Topics\forms.php">Forms</a></li>
+                    <li><a href="/HTML_Topics\XHTML.php">XHTML</a></li>
+                    <li><a href="/HTML_Topics\meta.php">Meta tags</a></li>
 
 
                 </ul>
             </li>
 
 
-            <li class="dropdown"><a href="#">CSS Topics &#4955;</a>
+            <li class="dropdown"><a href="#">CSS Topics &#9660;</a>
                 <ul class="dropdown-menu">
                     <li><a href="">CSS Selectors</a></li>
                     <li><a href="">Border Box</a></li>
@@ -60,7 +58,7 @@
             </li>
 
             <li>
-                <!-- <a href="">Sign up</a> -->
+                <a href="/signup.php">Sign Up</a>
             </li>
         </ul>
 

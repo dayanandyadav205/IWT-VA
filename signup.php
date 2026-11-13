@@ -1,0 +1,104 @@
+<?php
+include 'connection.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        main {
+            padding: 20px;
+        }
+
+        fieldset {
+            padding: 20px;
+            width: 50%;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <?php include './include/header.php'; ?>
+
+    <main>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form action="#" method="POST" name="f1" onsubmit="return chkpwd()">
+                <input type="text" name="fname" required placeholder="First Name" required>
+
+                <br><br><input type="text" name="lname" required placeholder="Last Name" required>
+
+                <br> <br><input type="email" name="email" required placeholder="Email" required>
+
+                <br> <br><input type="password" name="password" id="pwd" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+                    title="Must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character." required>
+                <button type="button" onclick="showpwd()">&#128065;</button><br />
+
+                <br><br><input type="password" name="cpassword" required placeholder="Confirm Password" required>
+
+                <br><br><input type="submit" name="register" value="Signup">
+            </form>
+        </fieldset>
+
+    </main>
+
+</body>
+
+</html>
+
+<script>
+    function showpwd() {
+        let x = document.getElementById('pwd');
+        if (x.type == "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+    function chkpwd() {
+        let p1 = document.f1.password.value;
+        let p2 = document.f1.cpassword.value;
+
+        if (p1 == p2) {
+            return true;
+        } else {
+            alert("Password Mismatch");
+            return false;
+
+        }
+    }
+</script>
+
+
+<?php
+if(isset($_POST['register'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+
+    // Perform registration logic here
+    $query = "INSERT INTO signup (fname, lname, email, password, cpassword) VALUES ('$fname', '$lname', '$email', '$password', '$cpassword')";
+
+    $data = mysqli_query($conn, $query);
+    if($data) {
+        echo "Data Inserted into Database";
+        }else{
+            echo "Failed to Insert";
+        }
+}
+?>
