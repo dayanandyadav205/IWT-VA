@@ -43,12 +43,8 @@
                     <li><a href="/HTML_Topics\forms.php">Forms</a></li>
                     <li><a href="/HTML_Topics\XHTML.php">XHTML</a></li>
                     <li><a href="/HTML_Topics\meta.php">Meta tags</a></li>
-
-
                 </ul>
             </li>
-
-
             <li class="dropdown"><a href="#">CSS Topics &#9660;</a>
                 <ul class="dropdown-menu">
                     <li><a href="">CSS Selectors</a></li>
@@ -59,6 +55,7 @@
 
             <li>
                 <a href="/signup.php">Sign Up</a>
+                <a href="/login.php">Login</a>
             </li>
         </ul>
 

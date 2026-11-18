@@ -35,7 +35,7 @@ include 'connection.php';
     <main>
         <fieldset>
             <legend>Sign Up</legend>
-            <form action="#" method="POST" name="f1" onsubmit="return chkpwd()">
+            <form action="#" method="POST" name="f1" onsubmit="return chkpwd()" autocomplete="on">
                 <input type="text" name="fname" required placeholder="First Name" required>
 
                 <br><br><input type="text" name="lname" required placeholder="Last Name" required>
@@ -89,10 +89,9 @@ if(isset($_POST['register'])) {
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $cpassword = $_POST['cpassword'];
 
     // Perform registration logic here
-    $query = "INSERT INTO signup (fname, lname, email, password, cpassword) VALUES ('$fname', '$lname', '$email', '$password', '$cpassword')";
+    $query = "INSERT INTO signup (fname, lname, email, password) VALUES ('$fname', '$lname', '$email', '$password')";
 
     $data = mysqli_query($conn, $query);
     if($data) {

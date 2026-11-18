@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root"; 
 $password = "";
-$database = "iwt-all";
+$database = "iwt-5a";
 
 $conn = mysqli_connect($host, $user, $password, $database);
 if ($conn) {
