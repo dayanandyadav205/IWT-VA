@@ -52,6 +52,7 @@
                     <li><a href="/CSS_topics/bgimages.php">Background images</a></li>
                     <li><a href="/CSS_topics/colors.php">Colours and properties</a></li>
                     <li><a href="/CSS_topics/fonts.php">Font properties and text formatting</a></li>
+                    <li><a href="/CSS_topics/borderbox.php">Borders and Boxes</a></li>
                 </ul>
             </li>
 
