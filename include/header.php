@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -24,13 +25,12 @@
         <div></div>
     </header>
 
-    <!-- Mobile view navigation -->
-     <input type="checkbox" id="menu">
-     <label for="menu" style="font-size: 30px;">&#9776; Menu</label>
+    <input type="checkbox" id="menu">
+    <label for="menu" style="font-size: 30px;">&#9776; Menu</label>
     <!-- Desktop view navigation -->
     <nav>
         <ul>
-            <li><a href="/index.php">HOME2</a></li>
+            <li><a href="/index.php">HOME</a></li>
             <li class="dropdown"><a href="#">HTML Topics &#9660;</a>
                 <ul class="dropdown-menu">
                     <li><a href="/HTML_Topics\HTML_text_formatting.php" target="_top">HTML Text Formatting</a></li>
@@ -43,19 +43,29 @@
                     <li><a href="/HTML_Topics\forms.php">Forms</a></li>
                     <li><a href="/HTML_Topics\XHTML.php">XHTML</a></li>
                     <li><a href="/HTML_Topics\meta.php">Meta tags</a></li>
+                    <li><a href="/HTML_Topics\iframe.php">Iframe</a></li>
                 </ul>
             </li>
             <li class="dropdown"><a href="#">CSS Topics &#9660;</a>
                 <ul class="dropdown-menu">
-                    <li><a href="">CSS Selectors</a></li>
-                    <li><a href="">Border Box</a></li>
-
+                    <li><a href="/CSS_topics/selectors.php">CSS Selectors</a></li>
+                    <li><a href="/CSS_topics/bgimages.php">Background images</a></li>
+                    <li><a href="/CSS_topics/colors.php">Colours and properties</a></li>
+                    <li><a href="/CSS_topics/fonts.php">Font properties and text formatting</a></li>
                 </ul>
             </li>
 
             <li>
                 <a href="/signup.php">Sign Up</a>
+                
+            </li>
+
+            <li>
                 <a href="/login.php">Login</a>
+            </li>
+
+            <li>
+                <a href="/contact.php">Contact Us</a>
             </li>
         </ul>
 

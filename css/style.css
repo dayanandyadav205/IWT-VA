@@ -3,11 +3,17 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 header {
-    background-color: navy;
+    background-color: #0B3C5D;
+    color: white;
     display: flex;
     text-align: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 header img {
@@ -16,28 +22,23 @@ header img {
     border-radius: 50%;
 }
 
-header h1,
-h2,
-h3 {
-    color: #FFFFFF;
-}
-
 /* ================= Navigation CSS ================*/
 
-/* Mobile view CSS */
+
+/* Desktop viwe CSS */
 #menu {
     display: none;
 }
 
-label{
+label[for="menu"] {
     display: none;
-
 }
 
-/* Desktop viwe CSS */
 nav {
-    background-color: navy;
-
+    background-color: #0B3C5D;
+    padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -87,7 +88,7 @@ nav ul a:hover {
 
 /*=========== Aside main CSS========= */
 aside {
-    background-color: navy;
+    background-color: #0B3C5D;
     flex: 30%;
 }
 
@@ -96,8 +97,30 @@ aside {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* padding: 20px; */
+    /* border-left: 5px solid red;
+    border-right: 20px solid white;
+    border-top: 20px solid orange;
+    border-bottom: 20px solid yellow; */
+    border: 5px solid white;
+
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+
+    margin: 20px;
+
+    text-align: justify;
 }
 
+.myimage {
+    text-align: center;
+}
 
 
 aside img {
@@ -113,6 +136,36 @@ aside p {
 main {
     background-color: #ffffff;
     flex: 80%;
+    padding: 20px;
+}
+
+.cdgi-img {
+    text-align: center;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6 {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.article2 {
+    position: relative;
+}
+
+.article2-child {
+    position: absolute;
+    left: 1280px;
+    top: -10px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 footer {
@@ -140,26 +193,21 @@ footer p {
         line-height: 30px;
     }
 
-    /* toggle Menu */
-    /* #menu {
-        display: block;
-    } */
-
-    label{
-        display: block;
+    label[for="menu"] {
+        display: inline-block
     }
 
-    nav{
+
+    nav {
         display: none;
     }
-
 
     #menu:checked~nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
-    } 
+    }
 
     nav ul {
         display: flex;
@@ -196,6 +244,21 @@ footer p {
     .aside-main {
         display: block;
         /* flex-direction: column; */
+    }
+
+    /* Main of Home page */
+    .article2 {
+        position: relative;
+    }
+
+    .article2-child {
+        position: absolute;
+        left: 430px;
+        top: -10px;
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
     footer {
