@@ -38,12 +38,15 @@
                     <li><a href="/HTML_Topics\colors.php">Colors</a></li>
                     <li><a href="/HTML_Topics\hyperlinks.php">Hyperlinks</a></li>
                     <li><a href="/HTML_Topics\lists.php">Lists</a></li>
-                    <li><a href="/HTML_Topics\table.php">Tables</a></li>
-                    <li><a href="/HTML_Topics\images.php">Images</a></li>
-                    <li><a href="/HTML_Topics\forms.php">Forms</a></li>
-                    <li><a href="/HTML_Topics\XHTML.php">XHTML</a></li>
-                    <li><a href="/HTML_Topics\meta.php">Meta tags</a></li>
-                    <li><a href="/HTML_Topics\iframe.php">Iframe</a></li>
+                    <li><a href="/HTML_Topics/table.php">Tables</a></li>
+                    <li><a href="/HTML_Topics/images.php">Images</a></li>
+                    <li><a href="/HTML_Topics/forms.php">Forms</a></li>
+                    <li><a href="/HTML_Topics/XHTML.php">XHTML</a></li>
+                    <li><a href="/HTML_Topics/meta.php">Meta tags</a></li>
+                    <li><a href="/HTML_Topics/character-entities.php">Character Entities</a></li>
+                    <li><a href="/HTML_Topics/iframe.php">Iframe/Frameset</a></li>
+                    <li><a href="/HTML_Topics/website-structure.php">Website Structure</a></li>
+                    <li><a href="/HTML_Topics/browser-architecture.php">Web Browser Architecture</a></li>
                 </ul>
             </li>
             <li class="dropdown"><a href="#">CSS Topics &#9660;</a>
@@ -53,12 +56,13 @@
                     <li><a href="/CSS_topics/colors.php">Colours and properties</a></li>
                     <li><a href="/CSS_topics/fonts.php">Font properties and text formatting</a></li>
                     <li><a href="/CSS_topics/borderbox.php">Borders and Boxes</a></li>
+                    <li><a href="/CSS_topics/positions.php">CSS The position Property</a></li>
                 </ul>
             </li>
 
             <li>
                 <a href="/signup.php">Sign Up</a>
-                
+
             </li>
 
             <li>
@@ -67,6 +71,10 @@
 
             <li>
                 <a href="/contact.php">Contact Us</a>
+            </li>
+
+            <li>
+            <li><a href="/downloads.php">Downloads</a></li>
             </li>
         </ul>
 

@@ -11,55 +11,55 @@
         .List-container {
             padding: 50px;
             margin: 20PX;
+        }
     </style>
-
-    }
-
-
-
 </head>
 
 <body>
     <?php include '../include/header.php'; ?>
-
-    <div class="List-container">
-
-
-        <h1>Lists</h1>
-
-        <h5>Ordered List</h5>
-        <ol>
-            <li>fsfdgf</li>
-        </ol>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-
-        <h5>Unordered List</h5>
-        <ul>
-            <li>pen</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+    <main>
+        <div class="List-container">
 
 
-        <h5>Nested List</h5>
-        <ul>
-            <li>pen</li>
+            <h1>Lists</h1>
+
+            <h5>Ordered List</h5>
+            <ol>
+                <li>fsfdgf</li>
+            </ol>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+
+            <h5>Unordered List</h5>
             <ul>
-                <li>Montex</li>
-                <li>Reynolds</li>
-
+                <li>pen</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
             </ul>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+
+
+            <h5>Nested List</h5>
+            <ul>
+                <li>pen</li>
+                <ul>
+                    <li>Montex</li>
+                    <li>Reynolds</li>
+
+                </ul>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
 
 
 
-    </div>
+        </div>
+
+        <h3>For more details please download PPT of Unit-II from <a href="/downloads.php">Downloads</a> </h3>
+
+    </main>
 </body>
 
 </html>

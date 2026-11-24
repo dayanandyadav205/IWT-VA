@@ -36,7 +36,7 @@ label[for="menu"] {
 
 nav {
     background-color: #0B3C5D;
-    padding: 20px;
+    /* padding: 20px; */
     position: sticky;
     top: 0;
 }
@@ -83,6 +83,11 @@ nav ul a:hover {
 
 .aside-main {
     display: flex;
+}
+
+/* Border Box */
+pre {
+    font-size: 20px;
 }
 
 
@@ -137,6 +142,7 @@ main {
     background-color: #ffffff;
     flex: 80%;
     padding: 20px;
+    line-height: 30px;
 }
 
 .cdgi-img {
@@ -160,7 +166,7 @@ main {
 
 .article2-child {
     position: absolute;
-    left: 1280px;
+    left: 1000px;
     top: -10px;
     background-color: red;
     color: white;
@@ -170,7 +176,7 @@ main {
 
 footer {
     padding: 20px;
-    background-color: navy;
+    background-color: #0B3C5D;
 }
 
 footer p {
@@ -183,7 +189,12 @@ footer p {
 
 @media(max-width:768px) {
     body {
-        font-size: 80%;
+        font-size: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     header {
@@ -253,7 +264,7 @@ footer p {
 
     .article2-child {
         position: absolute;
-        left: 430px;
+        left: 455px;
         top: -10px;
         background-color: red;
         color: white;
